@@ -110,3 +110,21 @@ let backToTheFuture = new Movie("Back to the future", '1985', 'sci-fi', 'Michael
 console.log(backToTheFuture.blurb())
 
 //question 6
+class Vector {
+    constructor(x, y){
+        this.x = x
+        this.y = y
+    }
+    plus(vector){
+        return this.x + this.y
+    }
+    minus(vector){
+        return this.x - this.y
+    }
+    getLength(){
+        
+    }
+} 
+ var v1 = new Vector(1, 2)
+ var v2 = new Vector(2, 3)
+ console.log(v1.plus(v2))
