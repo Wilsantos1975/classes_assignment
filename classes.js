@@ -37,3 +37,31 @@ let theAlchemist = new Book("The Alchemist", "Paulo Coelho", 8)
 let theHobbit = new Book("The Hobbit", "J.R.R Tolkien", 10)
 
 console.log(theRaven.isGood())
+//Question 3
+class Dog {
+    constructor(name, breed, mood, hungry){
+        this.name = name
+        this.breed = breed
+        this.mood = mood
+        this.hungry = hungry
+    }
+    playFetch(){
+        this.hungry = true
+        this.mood = "Playful"
+        console.log("Ruff!")
+    }
+    feed(){
+        if(this.hungry === true){
+            this.hungry = false
+            console.log("Woof!")
+        } else {
+            console.log("The dog doesn't look hungry")
+        }
+    }
+    toString(){
+        console.log("The Dog's name is " + this.name + " and his breed is " + this.breed + ". Most of the time he is " + this.mood + ".")
+            }
+}
+let blackie = new Dog("Blackie", "Bulldog", "Happy", false)
+blackie.toString()
+//Question 4
