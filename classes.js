@@ -91,3 +91,22 @@ isBelowFreezing(){
 }
 let outsideTempt = new Celsius(0)
 console.log(outsideTempt.isBelowFreezing())
+
+//Question 5
+
+class Movie {
+    constructor(name, year, genre, cast, description){
+        this.name = name
+        this.year = year
+        this.genre = genre
+        this.cast = cast
+        this.description = description
+    }
+    blurb(){
+        return this.name + " came out in " + this.year + " . It was a " + this.genre + " film starring " + this.cast + ". " + this.description + "."
+    }
+}
+let backToTheFuture = new Movie("Back to the future", '1985', 'sci-fi', 'Michael J. Fox', "Marty McFly travels to the future")
+console.log(backToTheFuture.blurb())
+
+//question 6
