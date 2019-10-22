@@ -65,3 +65,29 @@ class Dog {
 let blackie = new Dog("Blackie", "Bulldog", "Happy", false)
 blackie.toString()
 //Question 4
+
+let freezingPoint = {
+    celsius: 0,
+    fahrenheit: 32,
+    kelvin: 273.2
+}
+
+class Celsius {
+    constructor(celsius){this.celsius = celsius}
+
+getFahrenheitTemp(){
+    return 1.8 * this.celsius + 32
+}
+getKelvinTemp(){
+    return this.celsius + 273
+}
+isBelowFreezing(){
+    if(this.celsius <= 0){
+        return true
+    }else {
+        return false
+    }
+}
+}
+let outsideTempt = new Celsius(0)
+console.log(outsideTempt.isBelowFreezing())
